@@ -1,0 +1,17 @@
+{
+  "name": "christian-server-enforcer",
+  "version": "1.0.0",
+  "description": "Enforces christian server rules",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "enmap": "^2.1.1",
+    "enmap-level": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CatThingy",
+  "license": "ISC"
+}

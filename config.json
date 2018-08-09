@@ -1,0 +1,4 @@
+{
+    "token":"your.bot.token_here",
+    "banned":["banned","words","go","here"]
+}
