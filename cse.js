@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+﻿const Discord = require('discord.js');
 const config = require('./config.json');
 const enmap = require('enmap');
 const enmapLevel = require('enmap-level');
@@ -21,15 +21,6 @@ client.on('message', message=>{
         settings_cse.set(message.guild.id, defaultSettings);
     }
     const serverSettings = settings_cse.get(message.guild.id);
-    if(message.content.toLowerCase().startsWith('^echo ') && message.author.id == "160600035329835009"){
-        message.channel.send(message.content.split('^echo ')[1]);
-        if(message.guild.available){
-            if(message.guild.me.hasPermission("MANAGE_MESSAGES")){
-                message.delete();
-            }
-        }
-        return;
-    }
     if(!serverSettings.toggled){
         for(var i = config.banned.length; i-->0;){
             if(message.content.toLowerCase().replace(/[^a-z]/g,'').includes(config.banned[i])){
